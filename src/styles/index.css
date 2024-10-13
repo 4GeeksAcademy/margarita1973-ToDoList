@@ -11,34 +11,26 @@ h1 {
 }
 
 #todolist {
-    border: 1px gainsboro;
+    font-family: "Klee One", cursive
 }
 
 .todolist-body {
-    /* border: solid 1px rgb(228, 223, 223);  */
-    width: 60%;
-    box-shadow: 0px 4px rgb(228, 223, 223);
-}
+    border: solid 1px rgb(228, 223, 223);  
+    width: 50%;
+    box-shadow: 5px 5px rgb(241, 240, 240), 10px 10px rgb(216, 215, 215), 15px 15px rgb(209, 209, 209);
+  }
 
-.back {
-    /* border: solid 1px rgb(214, 209, 209); */
-    width: 59%;
-    box-shadow: 0px 4px rgb(228, 223, 223);
-}
 
 ul {
     list-style-type: none;
 }
 
-.list-group-item{
-    font-family: Handlee;
-}
 
 .list-group-item,
 #input {
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-radius: 0%;
     font-size: 1.5rem;
    }
@@ -51,8 +43,10 @@ ul {
     display: inline-block;
 }
 .counter{
-    margin: 10px;
-font: helvetica, 0.5rem;
+    margin: 5px;
+font: helvetica ;
+font-size: 0.75rem;
 text-align: start;
+color: darkgrey;
 
 }

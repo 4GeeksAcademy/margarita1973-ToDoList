@@ -12,14 +12,12 @@ const NewItem = () => {
         items = toDos.length;
         return items
      }
-
-   
-   
+ 
     return (
-        <div id="todolist" className="container border border-secondary-subtle p-0">
+        <div id="todolist" className="container border border-secondary-subtle p-0 ">
             <input id="input" className="form-control  px-5 py-3" placeholder="what's need to be done?" onChange={
                 (e) => { setNewToDo(e.target.value) }}
-                onKeyDown={(e) => { if (e.key == "Enter") { setToDos([...toDos, newToDo]); e.target.value = "" } }}
+                onKeyDown={(e) => { if (e.key == "Enter" && newToDo!== "") { setToDos([...toDos, newToDo]); e.target.value = ""; setNewToDo("")}}}
             />
             <ul className="list-group"> 
                 {toDos.map((todo, i) => {
